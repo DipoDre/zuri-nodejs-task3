@@ -15,22 +15,18 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', intern.getInterns);
 
 // GET an intern.
-    // app.get('/{id}', (req, res) => {});
 app.get('/:id', intern.getIntern);
 
 
 // POST (Create) an intern.
-    // app.post('/', (req, res) => {});
 app.post('/', intern.addIntern);
 
 
 // UPDATE(Modify) an intern.
-    // app.put('/{id}', (req, res) => {});
 app.put('/:id', intern.updateIntern);
 
 
 // DELETE(Remove) an intern.
-    // app.delete('/{id}', (req, res) => {});
 app.delete('/:id', intern.deleteIntern);
 
 

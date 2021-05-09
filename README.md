@@ -5,11 +5,11 @@ A simple crud app with database.
 www.zuri-nodejs-task3.com
 
 ## Task3 API
-Action | Route | Desccription
+Method | URI | Desccription
 -------|-------|-------------
-GET | / | Gets all the data in the database
-GET | /{id} | Gets a specific data in the database
-POST | / | Creates a specific data in the database
-PUT | /{id} | Updates a specific data in the database
-DELETE | /{id} | Deletes a specific data in the database
+GET | / | Retrieves all interns in the database
+GET | /{id} | Retrieves a specific intern by its ID
+POST | / | Creates a new intern
+PUT | /{id} | Updates a specific intern in the database
+DELETE | /{id} | Deletes a specific intern in the database
 
