@@ -2,6 +2,9 @@
   "name": "zuri-nodejs-task3",
   "version": "1.0.0",
   "description": "A simple crud app with database.",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -14,7 +17,8 @@
   },
   "keywords": [
     "crud",
-    "express"
+    "express",
+    "heroku"
   ],
   "author": "DipoDre",
   "license": "ISC",

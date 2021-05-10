@@ -22,7 +22,7 @@ module.exports.getIntern = function(req, res) {
                 res.status(404).json({ message: "intern not found"});
             }
             else {
-                res.status(200).json({ message: "fetching was successful, intern found", data: result });
+                res.status(200).json({ message: "fetching was successful, intern found", data: { intern: result } });
             }
             
         }
@@ -49,7 +49,7 @@ module.exports.addIntern = function(req, res) {
 
     // Save Intern
     newIntern.save()
-        .then((result) => res.status(201).json({ message: "addition was successful, new intern created", data: result }))
+        .then((result) => res.status(201).json({ message: "addition was successful, new intern created", data: { intern: result } }))
         .catch(error => res.status(500).json({ message: error.message }));
     
     }
@@ -75,7 +75,7 @@ module.exports.updateIntern = function(req, res) {
             if (!result) {
                 res.status(404).json({ message: "intern not found, Use POST request to create a new one"});
             } else {
-                res.status(200).json({ message: "update was successful, intern updated", data: result })
+                res.status(200).json({ message: "update was successful, intern updated", data: { intern: result } })
             }
             
         }
@@ -93,7 +93,7 @@ module.exports.deleteIntern = function(req, res) {
                 res.status(404).json({ message: "intern was not found"});
             }
             else {
-                res.status(200).json({ message: "intern was deleted successfully", data: result });
+                res.status(200).json({ message: "intern was deleted successfully", data: { intern: result } });
             }
             
         }
