@@ -14,9 +14,9 @@ PUT | /{id} | Updates a specific intern.
 DELETE | /{id} | Deletes a specific intern.
 
 
-### Task3 Intern's Data Format Example
-{
-    "name": "Yemi Alade",
-    "email": "yalade@gmail.com ",
-    "country": "Nigeria"
-}
+#### Task3 Intern's Data Format Example
+    {
+        "name": "Yemi Alade",
+        "email": "yalade@gmail.com ",
+        "country": "Nigeria"
+    }
