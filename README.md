@@ -2,7 +2,7 @@
 A simple crud app with database.
 
 ## Hosted Link
-www.zuri-nodejs-task3.com
+https://quiet-savannah-76594.herokuapp.com/
 
 ## Task3 API
 Method | URI | Desccription
